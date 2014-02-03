@@ -1,0 +1,29 @@
+ #!/bin/bash
+clear
+function menu_princ() {
+echo " Welcome In ProSpector "
+echo " Selectionnez ce que vous recherchez "
+echo " 1 - Des Armes / Des Donnees sur les Armes "
+echo " 2 - Des Medicaments, Des Aides Medicales "
+echo " 3 - Du materiel informatique, electronique "
+echo " 4 - Vous souhaitez voyager "
+echo " 5 - Des donnees post/preapocalyptiques "
+echo " 6 - De la nourriture et des vivres "
+echo " 7 - Des lieux de prospection naturels "
+echo " quitter "
+read choix
+case $choix in
+1)spectorweap;;
+2)spectorvital;;
+3)spectorexploit;;
+4)spectortravel;;
+5)spectordata;;
+6)spectorvivre;;
+7)spectornatural;;
+8)kuriozity;;
+*)exit 0;;
+esac
+}
+
+menu_princ
+
